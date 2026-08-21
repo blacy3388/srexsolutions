@@ -1,0 +1,39 @@
+SREX V2 WEBSITE UPGRADE
+========================
+
+This version includes:
+
+- The newly uploaded SREX SOLUTIONS logo
+- Transparent PNG and WebP logo formats
+- Ten completely new, bright, high-resolution banner illustrations
+- 2400 × 1350 JPEG banner masters
+- 1200, 1800 and 2400 pixel responsive WebP versions
+- Responsive <picture> and srcset code on the main pages
+- Hero-image preloading for improved display speed
+- Lighter image overlays
+- Page-specific Open Graph image updates
+- Existing SEO metadata, structured data, sitemap and Google integration
+- Analytics consent banner, privacy policy and cookie policy
+
+MAIN PAGES
+----------
+Home
+Building Automation
+Network Infrastructure
+Access & Security
+Guest House Solutions
+IoT & Custom Development
+Support & Maintenance
+Projects
+About
+Contact
+
+GOOGLE CONFIGURATION
+--------------------
+The GA4 placeholder remains inside google-config.js:
+G-XXXXXXXXXX
+
+The Search Console verification placeholder remains in the HTML pages:
+PASTE_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE_HERE
+
+See GOOGLE-SEO-SETUP-GUIDE.txt for implementation instructions.

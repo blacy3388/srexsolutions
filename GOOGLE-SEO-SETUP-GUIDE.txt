@@ -1,0 +1,118 @@
+SREX SEO + GOOGLE IMPLEMENTATION GUIDE
+======================================
+
+DOMAIN USED IN THIS PACKAGE
+---------------------------
+https://www.srex.co.uk/
+
+If your final domain is different, replace every occurrence of:
+https://www.srex.co.uk/
+inside the HTML files, sitemap.xml, robots.txt and htaccess-example.txt.
+
+WHAT HAS BEEN IMPLEMENTED
+-------------------------
+- Unique SEO title and meta description on every page
+- Canonical URLs
+- Google-friendly robots directives
+- Open Graph and social-sharing metadata
+- Organization, ProfessionalService, Service and Breadcrumb JSON-LD
+- sitemap.xml
+- robots.txt
+- Favicons and web app manifest
+- Google Search Console verification placeholder
+- Google Analytics 4 integration
+- Analytics click events for phone, email, CTAs and contact intent
+- Analytics consent banner
+- Privacy and cookie policy templates
+- Page-specific social images
+- Image loading and decoding improvements
+
+1. GOOGLE SEARCH CONSOLE
+------------------------
+Recommended option:
+1. Open Google Search Console.
+2. Add a Domain property for srex.co.uk.
+3. Copy the TXT verification value.
+4. Add it to your domain DNS records through your hosting/domain provider.
+5. After verification, submit:
+   https://www.srex.co.uk/sitemap.xml
+
+Alternative HTML meta verification:
+1. Choose URL-prefix property in Search Console.
+2. Select HTML tag verification.
+3. Copy only the content value from Google's meta tag.
+4. In every HTML file, replace:
+   PASTE_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE_HERE
+   with the supplied value.
+5. Upload the files and click Verify.
+
+2. GOOGLE ANALYTICS 4
+---------------------
+1. Create or open a GA4 property.
+2. Go to Admin > Data streams > Web.
+3. Create a stream for:
+   https://www.srex.co.uk/
+4. Copy the Measurement ID, which looks like G-ABC1234567.
+5. Open google-config.js.
+6. Replace:
+   G-XXXXXXXXXX
+   with your real Measurement ID.
+7. Upload the changed google-config.js.
+8. Visit the site, accept analytics, then check Analytics > Realtime.
+   Data may take several minutes to appear.
+
+The Analytics tag is not loaded before the visitor accepts analytics.
+The cookie banner remembers the visitor's choice in browser storage.
+
+3. GOOGLE BUSINESS PROFILE
+--------------------------
+1. Create or claim the SREX Google Business Profile.
+2. Use the same company name, telephone number, website URL and service area
+   shown on the website.
+3. Add the website URL:
+   https://www.srex.co.uk/
+4. Add accurate service categories and real project photographs.
+5. Do not publish a home address unless customers are received there.
+
+4. GOOGLE RICH RESULTS AND INDEXING TESTS
+-----------------------------------------
+After uploading:
+- Test pages with Google Rich Results Test.
+- Use Search Console URL Inspection on the homepage and each service page.
+- Request indexing after the live test succeeds.
+- Check that robots.txt and sitemap.xml are publicly reachable.
+
+5. EDIT BEFORE PUBLISHING
+-------------------------
+Update:
+- Phone number
+- Email address
+- Legal business name
+- Registered or correspondence address, if appropriate
+- Privacy policy details
+- Actual certifications and partner statuses
+- Service area
+- Social profile URLs when available
+
+Do not describe KNX, Loxone or electrical certification as completed until it
+has actually been awarded.
+
+6. OPTIONAL GOOGLE ADS
+----------------------
+The current package is prepared for GA4, not Google Ads conversion tracking.
+After Ads is created, the existing Google tag can be connected as a destination,
+or Google Tag Manager can be added later.
+
+FILES TO UPLOAD
+---------------
+Upload every file and folder inside srex-seo-google-ready, including:
+- all HTML pages
+- assets/
+- styles.css
+- script.js
+- google-config.js
+- google-integration.js
+- sitemap.xml
+- robots.txt
+- site.webmanifest
+- favicon.ico

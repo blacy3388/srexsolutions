@@ -1,0 +1,14 @@
+# OPTIONAL APACHE/CPANEL EXAMPLE
+# Rename this file to .htaccess only if your hosting uses Apache and your domain uses www.
+RewriteEngine On
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.srex\.co\.uk$ [NC]
+RewriteRule ^ https://www.srex.co.uk%{REQUEST_URI} [L,R=301]
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
