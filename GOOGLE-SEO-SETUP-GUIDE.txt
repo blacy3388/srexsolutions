@@ -3,10 +3,10 @@ SREX SEO + GOOGLE IMPLEMENTATION GUIDE
 
 DOMAIN USED IN THIS PACKAGE
 ---------------------------
-https://www.srex.co.uk/
+https://srexsolutions.com/
 
 If your final domain is different, replace every occurrence of:
-https://www.srex.co.uk/
+https://srexsolutions.com/
 inside the HTML files, sitemap.xml, robots.txt and htaccess-example.txt.
 
 WHAT HAS BEEN IMPLEMENTED
@@ -35,7 +35,7 @@ Recommended option:
 3. Copy the TXT verification value.
 4. Add it to your domain DNS records through your hosting/domain provider.
 5. After verification, submit:
-   https://www.srex.co.uk/sitemap.xml
+   https://srexsolutions.com/sitemap.xml
 
 Alternative HTML meta verification:
 1. Choose URL-prefix property in Search Console.
@@ -51,14 +51,10 @@ Alternative HTML meta verification:
 1. Create or open a GA4 property.
 2. Go to Admin > Data streams > Web.
 3. Create a stream for:
-   https://www.srex.co.uk/
-4. Copy the Measurement ID, which looks like G-ABC1234567.
-5. Open google-config.js.
-6. Replace:
-   G-XXXXXXXXXX
-   with your real Measurement ID.
-7. Upload the changed google-config.js.
-8. Visit the site, accept analytics, then check Analytics > Realtime.
+   https://srexsolutions.com/
+4. The configured Measurement ID is G-TKSLVRE08K.
+5. Upload google-config.js with the rest of the website.
+6. Visit the site, accept analytics, then check Analytics > Realtime.
    Data may take several minutes to appear.
 
 The Analytics tag is not loaded before the visitor accepts analytics.
@@ -70,7 +66,7 @@ The cookie banner remembers the visitor's choice in browser storage.
 2. Use the same company name, telephone number, website URL and service area
    shown on the website.
 3. Add the website URL:
-   https://www.srex.co.uk/
+   https://srexsolutions.com/
 4. Add accurate service categories and real project photographs.
 5. Do not publish a home address unless customers are received there.
 

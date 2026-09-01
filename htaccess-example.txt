@@ -3,7 +3,7 @@
 RewriteEngine On
 RewriteCond %{HTTPS} !=on [OR]
 RewriteCond %{HTTP_HOST} !^www\.srex\.co\.uk$ [NC]
-RewriteRule ^ https://www.srex.co.uk%{REQUEST_URI} [L,R=301]
+RewriteRule ^ https://srexsolutions.com%{REQUEST_URI} [L,R=301]
 
 <IfModule mod_expires.c>
   ExpiresActive On

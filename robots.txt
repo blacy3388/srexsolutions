@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.srex.co.uk/sitemap.xml
+Sitemap: https://srexsolutions.com/sitemap.xml

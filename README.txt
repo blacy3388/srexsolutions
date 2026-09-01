@@ -77,6 +77,6 @@ SEO + GOOGLE UPGRADE
 See GOOGLE-SEO-SETUP-GUIDE.txt before publishing.
 
 Important placeholders:
-- GA4 ID: G-XXXXXXXXXX in google-config.js
+- GA4 ID: G-TKSLVRE08K in google-config.js
 - Search Console meta verification:
   PASTE_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE_HERE
