@@ -18,23 +18,18 @@
 
     window.dataLayer = window.dataLayer || [];
     window.gtag = function () { window.dataLayer.push(arguments); };
-    window.gtag("js", new Date());
-    window.gtag("config", config.ga4MeasurementId, {
-      anonymize_ip: true,
-      allow_google_signals: false
+    window.gtag("consent", "update", {
+      analytics_storage: "granted"
     });
-
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://www.googletagmanager.com/gtag/js?id=" +
-      encodeURIComponent(config.ga4MeasurementId);
-    document.head.appendChild(script);
   }
 
   function setConsent(value) {
     localStorage.setItem(consentKey, value);
     document.getElementById("srex-cookie-banner")?.remove();
     if (value === "granted") loadAnalytics();
+    else if (typeof window.gtag === "function") {
+      window.gtag("consent", "update", { analytics_storage: "denied" });
+    }
   }
 
   function showBanner() {
