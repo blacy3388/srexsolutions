@@ -1,8 +1,9 @@
 # OPTIONAL APACHE/CPANEL EXAMPLE
-# Rename this file to .htaccess only if your hosting uses Apache and your domain uses www.
+# Rename this file to .htaccess only if your hosting uses Apache.
+# This redirects HTTP and www requests to the canonical non-www HTTPS domain.
 RewriteEngine On
 RewriteCond %{HTTPS} !=on [OR]
-RewriteCond %{HTTP_HOST} !^www\.srex\.co\.uk$ [NC]
+RewriteCond %{HTTP_HOST} !^srexsolutions\.com$ [NC]
 RewriteRule ^ https://srexsolutions.com%{REQUEST_URI} [L,R=301]
 
 <IfModule mod_expires.c>
