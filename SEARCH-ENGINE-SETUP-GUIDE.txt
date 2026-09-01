@@ -51,6 +51,9 @@ accounts when the target market is relevant to the business.
 PACKAGES, PRODUCTS AND PAYMENTS
 -------------------------------
 packages.html is an indexable service-package catalogue with request links.
+products.html is an indexable equipment catalogue with Product entities for
+TP-Link Omada, Cisco networking, CCTV systems and custom IoT devices. Each item
+has a reserve/request path into the enquiry form.
 Prices are intentionally not marked up because installed systems require a
 survey and no approved prices, VAT treatment or payment account were supplied.
 

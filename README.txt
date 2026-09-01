@@ -14,6 +14,7 @@ PAGES
 9. about.html
 10. contact.html
 11. packages.html
+12. products.html
 
 SHARED FILES
 ------------
