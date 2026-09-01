@@ -1,4 +1,4 @@
-SREX FULL 10-PAGE STATIC WEBSITE
+SREX FULL STATIC WEBSITE
 ================================
 
 PAGES
@@ -13,6 +13,7 @@ PAGES
 8. projects.html
 9. about.html
 10. contact.html
+11. packages.html
 
 SHARED FILES
 ------------
@@ -32,8 +33,8 @@ Keep all filenames and the assets folder structure unchanged.
 CONTACT DETAILS
 ---------------
 Search the HTML files for:
-07703 821 555
-info@srex.co.uk
+07417 580 544
+info@srexsolutions.com
 
 Replace these with your real details.
 

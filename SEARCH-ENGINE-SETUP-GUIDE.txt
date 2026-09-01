@@ -1,0 +1,80 @@
+SREX SEARCH ENGINE, BUSINESS AND COMMERCE SETUP
+================================================
+
+CANONICAL WEBSITE
+-----------------
+https://srexsolutions.com/
+
+Before submission, ensure www.srexsolutions.com has DNS and redirects with a
+301 response to the non-www address. The SSL certificate should cover both.
+
+GOOGLE
+------
+1. Search Console: add the Domain property srexsolutions.com and verify it by
+   adding Google's TXT record in DNS.
+2. Submit https://srexsolutions.com/sitemap.xml in Search Console.
+3. Inspect the homepage, packages page and service pages; request indexing
+   after the deployed URL passes Live Test.
+4. GA4 is configured with Measurement ID G-TKSLVRE08K. Test only after
+   accepting analytics cookies, then check Realtime and DebugView.
+5. Claim or create the Google Business Profile. Use exactly:
+   Business name: SREX Solutions
+   Website: https://srexsolutions.com/
+   Phone: 07417 580 544
+   Email: info@srexsolutions.com
+   Service area: only the areas the business genuinely serves.
+6. Add opening hours, real project photographs, services and accurate business
+   categories. Do not publish a residential address unless customers visit it.
+
+BING, YAHOO, DUCKDUCKGO AND ECOSIA
+---------------------------------
+1. Add the site in Bing Webmaster Tools. Importing the verified Google Search
+   Console property is the quickest supported route.
+2. Submit https://srexsolutions.com/sitemap.xml.
+3. Review Site Scan and SEO reports after Bing has crawled the site.
+4. Bing discovery also helps search experiences that use Bing's index. Yahoo,
+   DuckDuckGo and Ecosia do not require separate changes to these HTML pages.
+
+INDEXNOW
+--------
+IndexNow can notify participating engines when pages are added or materially
+changed. Generate a key in Bing Webmaster Tools or IndexNow, place the matching
+key text file at the website root, and submit changed canonical URLs. Do not
+invent a key or publish a key that has not been registered for this host.
+
+OTHER SEARCH ENGINES
+--------------------
+For Yandex Webmaster, Naver Search Advisor or another market-specific console,
+verify site ownership and submit the same canonical sitemap. Only create these
+accounts when the target market is relevant to the business.
+
+PACKAGES, PRODUCTS AND PAYMENTS
+-------------------------------
+packages.html is an indexable service-package catalogue with request links.
+Prices are intentionally not marked up because installed systems require a
+survey and no approved prices, VAT treatment or payment account were supplied.
+
+Before enabling immediate online purchase, provide and approve:
+- exact package and optional-extra prices;
+- whether prices include VAT;
+- geographical availability and installation lead times;
+- cancellation, refund, warranty and service terms;
+- a Stripe, PayPal or other checkout account;
+- product identifiers, availability and images for physical goods;
+- shipping and returns terms when equipment is sold for delivery.
+
+After those details exist, add secure hosted checkout links and eligible
+Product/Offer structured data. Use Google Merchant Center only for genuine
+products or eligible offers that meet its policies; do not submit quotation-only
+services as fixed-price retail products.
+
+DEPLOYMENT CHECKLIST
+--------------------
+- Upload all HTML, CSS, JavaScript, images, sitemap.xml and robots.txt.
+- Confirm every canonical URL returns HTTP 200.
+- Confirm HTTP and www redirect once to https://srexsolutions.com/.
+- Confirm robots.txt and sitemap.xml are publicly accessible.
+- Test structured data with Google Rich Results Test.
+- Test mobile layout, enquiry links and package preselection.
+- Accept analytics in a private browser and confirm a GA4 Realtime visit.
+- Submit the sitemap to Google and Bing after deployment.
