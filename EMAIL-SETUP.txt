@@ -1,0 +1,16 @@
+SREX CONTACT FORM - IONOS SMTP SETUP
+====================================
+
+1. Confirm the hosting package supports PHP 8.1+ and outbound SMTP.
+2. Upload send-email.php with the website.
+3. Copy mail-config.example.php to mail-config.php on the web server.
+4. Replace REPLACE_WITH_SMTP_PASSWORD with the mailbox password.
+5. Never commit mail-config.php; .gitignore excludes it.
+6. Ensure the live website uses HTTPS.
+7. Submit a test enquiry and confirm it arrives.
+
+Configured SMTP: smtp.ionos.co.uk, port 587, STARTTLS.
+Sender and recipient: info@srexsolutions.com.
+
+For failures, inspect the PHP error log in the IONOS control panel. SMTP
+details are deliberately not shown to visitors.
