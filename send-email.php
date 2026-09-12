@@ -3,6 +3,10 @@ declare(strict_types=1);
 session_start();
 
 function finish(string $result): never {
+    if ($result === 'sent') {
+        header('Location: thank-you.html', true, 303);
+        exit;
+    }
     header('Location: contact.html?form=' . rawurlencode($result), true, 303);
     exit;
 }
@@ -32,8 +36,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 }
 if (trim((string) ($_POST['website'] ?? '')) !== '') finish('sent');
 $started = filter_input(INPUT_POST, 'form_started', FILTER_VALIDATE_INT);
-if (!$started || ((int) (microtime(true) * 1000) - $started) < 1500) finish('error');
-if ((int) ($_SESSION['srex_last_email'] ?? 0) > time() - 30) finish('error');
+if (!$started || ((int) (microtime(true) * 1000) - $started) < 1500) finish('validation');
+if ((int) ($_SESSION['srex_last_email'] ?? 0) > time() - 30) finish('rate');
 
 $name = headerValue((string) ($_POST['name'] ?? ''));
 $email = headerValue((string) ($_POST['email'] ?? ''));
@@ -41,16 +45,16 @@ $phone = headerValue((string) ($_POST['phone'] ?? ''));
 $property = headerValue((string) ($_POST['property'] ?? ''));
 $service = headerValue((string) ($_POST['service'] ?? ''));
 $message = trim((string) ($_POST['message'] ?? ''));
-if ($name === '' || strlen($name) > 120 || !filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($message) > 5000) finish('error');
+if ($name === '' || strlen($name) > 120 || !filter_var($email, FILTER_VALIDATE_EMAIL) || strlen($message) > 5000) finish('validation');
 
 $configPath = __DIR__ . '/mail-config.php';
 if (!is_file($configPath)) {
     error_log('SREX mail: mail-config.php is missing');
-    finish('error');
+    finish('config');
 }
 $config = require $configPath;
 foreach (['host', 'port', 'username', 'password', 'from_email', 'from_name', 'to_email'] as $key) {
-    if (empty($config[$key]) || $config[$key] === 'REPLACE_WITH_SMTP_PASSWORD') finish('error');
+    if (empty($config[$key]) || $config[$key] === 'REPLACE_WITH_SMTP_PASSWORD') finish('config');
 }
 
 $subject = 'New website enquiry: ' . ($service ?: 'General enquiry');
@@ -93,5 +97,5 @@ try {
 } catch (Throwable $exception) {
     error_log('SREX SMTP error: ' . $exception->getMessage());
     if (isset($socket) && is_resource($socket)) fclose($socket);
-    finish('error');
+    finish('smtp');
 }
