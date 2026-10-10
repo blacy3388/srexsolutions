@@ -3,10 +3,10 @@ SREX SEO + GOOGLE IMPLEMENTATION GUIDE
 
 DOMAIN USED IN THIS PACKAGE
 ---------------------------
-https://www.srex.co.uk/
+https://srexsolutions.com/
 
 If your final domain is different, replace every occurrence of:
-https://www.srex.co.uk/
+https://srexsolutions.com/
 inside the HTML files, sitemap.xml, robots.txt and htaccess-example.txt.
 
 WHAT HAS BEEN IMPLEMENTED
@@ -19,7 +19,7 @@ WHAT HAS BEEN IMPLEMENTED
 - sitemap.xml
 - robots.txt
 - Favicons and web app manifest
-- Google Search Console verification placeholder
+- Google Search Console verification by DNS (recommended)
 - Google Analytics 4 integration
 - Analytics click events for phone, email, CTAs and contact intent
 - Analytics consent banner
@@ -31,34 +31,28 @@ WHAT HAS BEEN IMPLEMENTED
 ------------------------
 Recommended option:
 1. Open Google Search Console.
-2. Add a Domain property for srex.co.uk.
+2. Add a Domain property for srexsolutions.com.
 3. Copy the TXT verification value.
 4. Add it to your domain DNS records through your hosting/domain provider.
 5. After verification, submit:
-   https://www.srex.co.uk/sitemap.xml
+   https://srexsolutions.com/sitemap.xml
 
-Alternative HTML meta verification:
+Alternative HTML meta verification (only if DNS verification is unavailable):
 1. Choose URL-prefix property in Search Console.
 2. Select HTML tag verification.
 3. Copy only the content value from Google's meta tag.
-4. In every HTML file, replace:
-   PASTE_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE_HERE
-   with the supplied value.
-5. Upload the files and click Verify.
+4. Add the supplied meta tag to the head of every public HTML page.
+5. Upload the files and click Verify. Do not add a placeholder value.
 
 2. GOOGLE ANALYTICS 4
 ---------------------
 1. Create or open a GA4 property.
 2. Go to Admin > Data streams > Web.
 3. Create a stream for:
-   https://www.srex.co.uk/
-4. Copy the Measurement ID, which looks like G-ABC1234567.
-5. Open google-config.js.
-6. Replace:
-   G-XXXXXXXXXX
-   with your real Measurement ID.
-7. Upload the changed google-config.js.
-8. Visit the site, accept analytics, then check Analytics > Realtime.
+   https://srexsolutions.com/
+4. The configured Measurement ID is G-TKSLVRE08K.
+5. Upload google-config.js with the rest of the website.
+6. Visit the site, accept analytics, then check Analytics > Realtime.
    Data may take several minutes to appear.
 
 The Analytics tag is not loaded before the visitor accepts analytics.
@@ -70,7 +64,7 @@ The cookie banner remembers the visitor's choice in browser storage.
 2. Use the same company name, telephone number, website URL and service area
    shown on the website.
 3. Add the website URL:
-   https://www.srex.co.uk/
+   https://srexsolutions.com/
 4. Add accurate service categories and real project photographs.
 5. Do not publish a home address unless customers are received there.
 

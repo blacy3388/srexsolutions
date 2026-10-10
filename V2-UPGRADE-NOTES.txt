@@ -30,8 +30,8 @@ Contact
 
 GOOGLE CONFIGURATION
 --------------------
-The GA4 placeholder remains inside google-config.js:
-G-XXXXXXXXXX
+The GA4 Measurement ID is configured inside google-config.js:
+G-TKSLVRE08K
 
 The Search Console verification placeholder remains in the HTML pages:
 PASTE_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE_HERE

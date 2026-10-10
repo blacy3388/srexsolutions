@@ -1,4 +1,4 @@
-SREX FULL 10-PAGE STATIC WEBSITE
+SREX FULL STATIC WEBSITE
 ================================
 
 PAGES
@@ -13,6 +13,8 @@ PAGES
 8. projects.html
 9. about.html
 10. contact.html
+11. packages.html
+12. products.html
 
 SHARED FILES
 ------------
@@ -32,8 +34,8 @@ Keep all filenames and the assets folder structure unchanged.
 CONTACT DETAILS
 ---------------
 Search the HTML files for:
-07703 821 555
-info@srex.co.uk
+07417 580 544
+info@srexsolutions.com
 
 Replace these with your real details.
 
@@ -77,6 +79,6 @@ SEO + GOOGLE UPGRADE
 See GOOGLE-SEO-SETUP-GUIDE.txt before publishing.
 
 Important placeholders:
-- GA4 ID: G-XXXXXXXXXX in google-config.js
+- GA4 ID: G-TKSLVRE08K in google-config.js
 - Search Console meta verification:
   PASTE_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE_HERE
